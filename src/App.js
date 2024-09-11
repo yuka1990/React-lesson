@@ -3,6 +3,7 @@ import './App.css';
 import Todo from './todo'
 import MyButton from "./mybutton";
 import Profile from "./user";
+import Board from "./tic";
 import {useState} from 'react';
 
 function App() {
@@ -12,6 +13,8 @@ function App() {
     alert('You cliched me!');
     setCount(count + 1);
   }
+  
+  
   
   return (
     <div className="App">
@@ -25,6 +28,9 @@ function App() {
           <MyButton count={count} onClick={handleClick} />
           <MyButton count={count} onClick={handleClick} />
           <Profile />
+        </div>
+        <div>
+          <Board />
         </div>
       </header>
     </div>
